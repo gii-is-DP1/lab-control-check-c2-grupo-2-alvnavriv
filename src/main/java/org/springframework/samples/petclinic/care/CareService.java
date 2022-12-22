@@ -24,7 +24,7 @@ public class CareService {
     }
     
     public Care getCare(String careName) {
-        return null;
+        return cpr.findCareByName(careName);
     }
     
     public CareProvision save(CareProvision p) throws NonCompatibleCaresException, UnfeasibleCareException {        
@@ -32,7 +32,7 @@ public class CareService {
     }
 
     public List<CareProvision> getAllCaresProvided(){
-        return null;
+        return cpr.findAll();
     }
 
     public List<CareProvision> getCaresProvidedInVisitById(Integer visitId){
