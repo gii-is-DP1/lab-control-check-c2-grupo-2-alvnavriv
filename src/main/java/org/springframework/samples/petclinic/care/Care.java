@@ -36,4 +36,8 @@ public class Care extends BaseEntity{
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "care_type")
     Set<PetType> compatiblePetTypes;
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "care_compatible")
+    Set<Care> incompatibleCares;
 }

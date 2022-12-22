@@ -72,3 +72,6 @@ INSERT INTO care_type VALUES (1,2);
 INSERT INTO care_type VALUES (1,6);
 INSERT INTO care_type VALUES (2,6);
 INSERT INTO care_type VALUES (2,1);
+
+INSERT INTO care_compatible VALUES (1,2);
+INSERT INTO care_compatible VALUES (2,1);
